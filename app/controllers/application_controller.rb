@@ -5,6 +5,7 @@ class MyClass
   def initialize
     @logger = logger = Logger.new(STDOUT)
     @logger.level = Logger::WARN
+    @logger = logger = Logger.new('logfile.log')
   end
 
   def say_something
